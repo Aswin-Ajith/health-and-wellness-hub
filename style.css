@@ -1,0 +1,215 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+.col-4 nav ul li {
+    margin-left: 13px;
+    margin-top: 100px;
+}
+
+.col-4 nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 840px;
+    background-size: contain;
+    background-image: url(./images/lotus\ \(2\).jpg);
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+
+}
+
+.container h1 {
+    font-size: 88px;
+
+}
+
+.container h2 {
+    font-size: 40px;
+
+}
+
+.gap {
+    margin-bottom: 30px;
+}
+
+.container .content {
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein, fade;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 600px;
+    }
+
+    to {
+        margin-top: 0px;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.wheel {
+    content-visibility: auto;
+    background-color: #44436C;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wheel h4 a {
+    text-decoration: none;
+    color: white;
+}
+
+.wheel h3:hover {
+    color: #44436C;
+    background-color: white;
+}
+
+.wheel-image {
+    position: relative;
+}
+
+.wheel-image .bar {
+    position: absolute;
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    opacity: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: scale(0.1) rotate(-800deg);
+    }
+
+    to {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.info img {
+    width: 340px;
+    height: 340px;
+    border-radius: 170px;
+    margin: 80px;
+}
+
+.info {
+    content-visibility: auto;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 50px;
+    animation-name: fade;
+    animation-duration: .5s;
+}
+
+.info h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.info p {
+    font-size: 28px;
+    width: 450px;
+    text-align: center;
+}
+
+.info h2{
+    font-size: 22px;
+    border: 1px solid white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+.info h2:hover{
+    background-color: white;
+    color: #585788;
+}
+.info h2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.quote1 {
+    content-visibility: auto;
+    color: white;
+    background-image: url(https://static.wixstatic.com/media/11062b_f48a6a9881434510b2d5fcc084262cb2~mv2.jpg/v1/fill/w_1899,h_1000,fp_0.69_0.31,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f48a6a9881434510b2d5fcc084262cb2~mv2.jpg);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quote2 {
+    content-visibility: auto;
+    color: white;
+    background-image: url(https://static.wixstatic.com/media/11062b_ef6d0d72d2ec4737bec83dcb3ae0a292~mv2.jpg/v1/fill/w_1899,h_700,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_ef6d0d72d2ec4737bec83dcb3ae0a292~mv2.jpg);
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+input::-webkit-input-placeholder{
+    color: white !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+}
+textarea::-webkit-input-placeholder{
+    color: white !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.contact-mail p{
+    animation-name: fade !important; 
+    animation-duration: 2s !important;
+}
